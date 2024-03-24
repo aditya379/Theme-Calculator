@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+body {
+  background-color: hsl(222, 26%, 31%);
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "League Spartan", sans-serif;
+  font-optical-sizing: auto;
+  overflow: hidden;
+}
+
+.mainarea {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 400px;
+}
+
+.toparea {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.theme {
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+  gap: 5px;
+}
+
+.num span {
+  float: right;
+  letter-spacing: 5px;
+  font-size: 10px;
+  font-weight: 700;
+  color: hsl(0, 0%, 100%);
+}
+.themechanger {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.themechanger >span{
+    font-size: 10px;
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+}
+.title{
+    font-size: 32px;
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+}
+
+.switcher{
+    height: 15px;
+    width: 50px;
+    background-color: hsl(221, 14%, 31%);
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 1px;
+}
+
+.ball{
+    width: 15px;
+    border-radius: 50%;
+    height: 15px;
+    background-color: hsl(6, 63%, 50%);
+}
+
+.ball2{
+    margin: auto;
+    width: 15px;
+    border-radius: 50%;
+    height: 15px;
+    background-color: hsl(6, 63%, 50%);
+}
+
+.ball3{
+    float:right;
+    width: 15px;
+    border-radius: 50%;
+    height: 15px;
+    background-color: hsl(6, 63%, 50%);
+}
+/* Input */
+.input{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border-radius: 10px;
+    background-color: hsl(224, 36%, 15%);
+    color: hsl(0, 0%, 100%);
+    font-size: 32px;
+    font-weight: 700;
+}
+
+/* Keypads */
+
+.keyframe {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 20px;
+    background-color: hsl(223, 31%, 20%);
+    padding: 12px 0px;
+    border-radius: 5px;
+}
+
+.grid {
+    width: 90%;
+    align-self: center;
+    justify-self: center;
+    padding: 7px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: hsl(221, 14%, 31%);
+    background-color: hsl(0, 0%, 100%);
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.keyframe button:nth-last-child(-n + 2) {
+    grid-column: span 2; 
+    width: 85%;
+}
+
+.red{
+    background-color: hsl(6, 63%, 50%);
+    color: white;
+}
+.blue{
+    background-color: hsl(225, 21%, 49%);
+    color: white;
+}
+.blue2{
+    background-color: hsl(225, 21%, 49%);
+    color: white;
+}
